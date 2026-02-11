@@ -8,9 +8,9 @@ namespace OrderManagement.Application.Services
     public class OrderService : IOrderService
     {
         private readonly IGenericRepository<Order> _orderRepository;
-        private readonly IUserGateway _userGateway;
+        private readonly IUserClient _userGateway;
 
-        public OrderService(IGenericRepository<Order> orderRepository, IUserGateway userGateway)
+        public OrderService(IGenericRepository<Order> orderRepository, IUserClient userGateway)
         {
             _orderRepository = orderRepository;
             _userGateway = userGateway;

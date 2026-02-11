@@ -1,6 +1,6 @@
 namespace OrderManagement.Application.Interfaces
 {
-    public interface IUserGateway
+    public interface IUserClient
     {
         bool IsUserExists(int userId);
     }

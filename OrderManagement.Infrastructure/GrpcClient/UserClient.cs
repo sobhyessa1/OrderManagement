@@ -1,13 +1,13 @@
 using OrderManagement.Application.Interfaces;
 using OrderManagement.Infrastructure.Protos;
 
-namespace OrderManagement.Infrastructure.Gateways
+namespace OrderManagement.Infrastructure.GrpcClient
 {
-    public class UserGateway : IUserGateway
+    public class UserClient : IUserClient
     {
         private readonly UserGrpc.UserGrpcClient _grpcClient;
 
-        public UserGateway(UserGrpc.UserGrpcClient grpcClient)
+        public UserClient(UserGrpc.UserGrpcClient grpcClient)
         {
             _grpcClient = grpcClient;
         }
